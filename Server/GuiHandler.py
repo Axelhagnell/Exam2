@@ -5,7 +5,8 @@
 class GuiHandler:
     def __init__(self,socketHandler_):
         self.socketHandler = socketHandler_
-
+    #test kommentar
+    
     #creates a interface with label and an entry field.
 
     def getPort(self):
