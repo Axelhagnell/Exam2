@@ -1,7 +1,7 @@
 import socket
 import _thread
 import sys
-from Comments.Server.Users import CollectionOfUsers
+from Users import CollectionOfUsers
 
 class SocketHandler:
     def __init__(self):
@@ -39,7 +39,7 @@ class SocketHandler:
         except:
             return "failed"
         #börjar lyssna
-        self.serverSocket.listen()
+        self.serverSocket.listen(5)
         #skapar en lista för clients som kan logga en
         self.list_of_known_clientSockets = []
         #skapar en lista för client adress som kan logga in

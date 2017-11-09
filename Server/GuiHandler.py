@@ -24,7 +24,7 @@ class GuiHandler:
 
 #main server GUI root Interface is created with tkinter settings.
     def startMainGui(self):
-        from Comments.Server.Users import CollectionOfUsers
+        from Users import CollectionOfUsers
         loop = True
         while loop:
             command = input("")
